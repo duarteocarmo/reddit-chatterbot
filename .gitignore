@@ -1,0 +1,6 @@
+.vscode
+reddit_data/
+chatbot/
+*.db
+*.sqlite3
+*.pickle
