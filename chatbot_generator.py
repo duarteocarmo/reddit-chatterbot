@@ -1,14 +1,16 @@
 from chatterbot.trainers import ListTrainer, ChatterBotCorpusTrainer
 from chatterbot import ChatBot
 
+YAML_CORPUS = "reddit_data/all.yml"
+
+
 chatbot = ChatBot("Doc")
 
 trainer = ChatterBotCorpusTrainer(chatbot)
 
-#trainer.train("chatterbot.corpus.english.greetings")
-trainer.train("reddit_data/all.yml")
+trainer.train(YAML_CORPUS)
 
-# TODO change that line in code for text interpretation Pull Request.
+# TODO change that line in chatbot sourcecode for text interpretation Pull Request.
 
 while True:
     try:
