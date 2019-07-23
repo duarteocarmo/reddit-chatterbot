@@ -2,9 +2,9 @@ from chatterbot.trainers import ListTrainer, ChatterBotCorpusTrainer
 from chatterbot import ChatBot
 
 YAML_CORPUS = "reddit_data/all.yml"
+CHATBOT_NAME = "My reddit bot:"
 
-
-chatbot = ChatBot("Doc")
+chatbot = ChatBot(CHATBOT_NAME)
 
 trainer = ChatterBotCorpusTrainer(chatbot)
 
